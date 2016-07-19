@@ -30,7 +30,7 @@ import {
     MD_LIST_DIRECTIVES],
   pipes: [ SearchPipe ]
 })
-export class HomeComponent implements OnInit {
+export class RegistryComponent implements OnInit {
 
   pokemons: Pokemon[];
   errorMessage: any;

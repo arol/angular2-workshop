@@ -1,10 +1,10 @@
 import { RouterConfig } from '@angular/router';
 
-import { HomeComponent } from './index';
+import { RegistryComponent } from './index';
 
-export const HomeRoutes: RouterConfig = [
+export const RegistryRoutes: RouterConfig = [
   {
     path: '',
-    component: HomeComponent
+    component: RegistryComponent
   },
 ];

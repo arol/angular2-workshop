@@ -1,11 +1,11 @@
 import { provideRouter, RouterConfig } from '@angular/router';
 
-import { AboutRoutes } from './+about/index';
-import { HomeRoutes } from './+home/index';
+import { PokedexRoutes } from './+pokedex/index';
+import { RegistryRoutes } from './+registry/index';
 
 const routes: RouterConfig = [
-  ...HomeRoutes,
-  ...AboutRoutes
+  ...RegistryRoutes,
+  ...PokedexRoutes
 ];
 
 export const APP_ROUTER_PROVIDERS = [

@@ -21,7 +21,7 @@ import {
   directives: [PokecardComponent, ROUTER_DIRECTIVES],
   pipes: [SearchPipe]
 })
-export class AboutComponent {
+export class PokedexComponent {
 
   constructor(public pokedexService: PokedexService){ };
 

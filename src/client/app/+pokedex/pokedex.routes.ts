@@ -1,10 +1,10 @@
 import { RouterConfig } from '@angular/router';
 
-import { AboutComponent } from './index';
+import { PokedexComponent } from './index';
 
-export const AboutRoutes: RouterConfig = [
+export const PokedexRoutes: RouterConfig = [
   {
-    path: 'about',
-    component: AboutComponent
+    path: 'pokedex',
+    component: PokedexComponent
   }
 ];
