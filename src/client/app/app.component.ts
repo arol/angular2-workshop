@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 import { HTTP_PROVIDERS } from '@angular/http';
 
-import { Config, PokemonRegistryService, PokedexService, NavbarComponent, ToolbarComponent } from './shared/index';
+import { Config, NavbarComponent, ToolbarComponent } from './shared/index';
 
 /**
  * This class represents the main application component. Within the @Routes annotation is the configuration of the
@@ -11,7 +11,7 @@ import { Config, PokemonRegistryService, PokedexService, NavbarComponent, Toolba
 @Component({
   moduleId: module.id,
   selector: 'pokedex-app',
-  providers: [PokemonRegistryService, PokedexService, HTTP_PROVIDERS],
+  providers: [HTTP_PROVIDERS],
   templateUrl: 'app.component.html',
   directives: [ROUTER_DIRECTIVES, NavbarComponent, ToolbarComponent]
 })

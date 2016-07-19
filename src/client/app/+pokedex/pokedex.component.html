@@ -1,6 +1,0 @@
-<div class="card-container">
-  <pokecard *ngFor="let pokemon of pokedexService.getPokemons()" [pokemon]="pokemon"></pokecard>
-  <p *ngIf="pokedexService.getPokemons().length === 0">
-    Go to the <a [routerLink]="['/']">registry</a> and add some pokémon
-  </p>
-</div>
