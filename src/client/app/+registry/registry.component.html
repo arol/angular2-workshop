@@ -1,0 +1,26 @@
+<div >
+  <h1>Pokémon Regitstry</h1>
+  <h2>{{pokedexService.getPokemons().length}} pokémons in your pokédex</h2>
+  <md-card>
+    <md-input [(ngModel)]="searchTerm">
+      <md-placeholder>Search by name</md-placeholder>
+    </md-input>
+  </md-card>
+</div>
+<div class="card-container" flex layout="row">
+    <!-- <md-card *ngFor="let pokemon of pokemons | search:searchTerm" >
+      <img [src]="pokemon.getImageUrl()" class="md-card-image" alt="Washed Out">
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">{{pokemon.name}}</span>
+        </md-card-title-text>
+        <md-card-title-media>
+          <div class="md-media-sm card-media"></div>
+        </md-card-title-media>
+      </md-card-title>
+      <md-card-actions layout="row" layout-align="end center">
+        <button md-button (click)="addPokemonToPokedex(pokemon)">Add to Pokédex</button>
+      </md-card-actions>
+    </md-card> -->
+    <pokecard *ngFor="let pokemon of pokemons | search:searchTerm" [pokemon]="pokemon"></pokecard>
+</div>

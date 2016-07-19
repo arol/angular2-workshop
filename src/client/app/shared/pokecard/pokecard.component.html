@@ -1,0 +1,24 @@
+<md-card>
+  <img [src]="pokemon.getImageUrl()" class="md-card-image" alt="Washed Out">
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">{{pokemon.name}}</span>
+    </md-card-title-text>
+    <md-card-title-media>
+      <div class="md-media-sm card-media"></div>
+    </md-card-title-media>
+  </md-card-title>
+  <md-card-actions layout="row" layout-align="end center">
+    <button md-button
+    (click)="addPokemonToPokedex(pokemon)"
+    *ngIf="!pokedexService.isAlreadyAdded(pokemon)">
+      Add to Pokédex
+    </button>
+    <button md-button
+    (click)="removePokemonFromPokedex(pokemon)"
+    *ngIf="pokedexService.isAlreadyAdded(pokemon)">
+      Remove from Pokédex
+    </button>
+
+  </md-card-actions>
+</md-card>
